@@ -24,7 +24,7 @@ public class CryptoCompareClient {
 
         ObjectMapper objMapper = new ObjectMapper();
         HashMap<String, Float> jsonMap = objMapper.readValue(jsonResponse,
-                new TypeReference<>() {
+                new TypeReference<HashMap<String, Float>>() {
                 });
 
 
